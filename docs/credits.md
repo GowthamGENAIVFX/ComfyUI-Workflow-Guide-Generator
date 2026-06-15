@@ -12,6 +12,8 @@ Technical Artist
 
 VFX Compositor
 
+ComfyUI Enthusiast
+
 ---
 
 ## Built With
