@@ -1,72 +1,82 @@
 # Optimization Notes
 
-## Design Philosophy
+## Philosophy
 
-Workflow Guide Generator prioritizes speed and readability over exhaustive technical analysis.
+Workflow Guide Generator prioritizes readability and workflow understanding over deep engineering analysis.
 
-The goal is helping artists understand workflows within seconds.
+The objective is helping artists understand workflows quickly.
 
 ---
 
 # Backend Optimizations
 
-## Single Pass Node Analysis
+## Single-Pass Workflow Analysis
 
-Most engines analyze workflow data using lightweight iteration.
+Most workflow inspection is completed using lightweight iteration.
 
 Benefits:
 
 * Fast execution
 * Low memory usage
-* Scalable to large workflows
+* Scalability
 
 ---
 
-## Duplicate Removal
+## Duplicate Elimination
 
-Model discovery removes duplicate entries.
+Repeated models and nodes are automatically filtered.
 
 Benefits:
 
 * Cleaner documentation
-* Reduced visual clutter
+* Better readability
 
 ---
 
-## Cached Documentation Structures
+## Lightweight Documentation Objects
 
-Generated documentation objects are lightweight and easily serialized.
+Documentation is stored as compact JSON structures.
 
 Benefits:
 
-* Fast frontend rendering
-* Minimal memory overhead
+* Faster rendering
+* Reduced memory overhead
 
 ---
 
 # Frontend Optimizations
 
-## Dynamic UI Layout
+## Dynamic Height Calculation
 
-The documentation panel automatically adjusts based on content size.
+Documentation sections resize automatically based on content length.
 
 Benefits:
 
-* No clipping
-* Better readability
-* Consistent presentation
+* No clipped text
+* Consistent layout
+* Better user experience
 
 ---
 
-## Lightweight Rendering
+## Dynamic Text Wrapping
 
-Rendering uses canvas drawing rather than heavy UI frameworks.
+Long model names and descriptions wrap automatically.
 
 Benefits:
 
-* Faster rendering
-* Better compatibility
-* Lower browser overhead
+* Improved readability
+* Cleaner presentation
+
+---
+
+## Lightweight Canvas Rendering
+
+Uses native canvas rendering inside ComfyUI.
+
+Benefits:
+
+* Fast rendering
+* Minimal browser overhead
 
 ---
 
@@ -75,17 +85,17 @@ Benefits:
 Potential improvements:
 
 * Documentation caching
-* Incremental workflow analysis
-* Node graph visualization
-* Workflow diff comparison
-* Multi-workflow documentation generation
+* Incremental updates
+* Workflow comparison
+* Documentation export
+* Multi-workflow analysis
 
 ---
 
 # Performance Targets
 
-Current target:
+Current goals:
 
-* Under 1 second analysis for most workflows
+* Under 1 second for most workflows
 * Under 2 seconds for large workflows
-* Minimal frontend impact
+* Minimal impact on ComfyUI performance
