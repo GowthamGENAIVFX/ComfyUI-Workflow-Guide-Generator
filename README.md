@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="assets/Comfyui-Workflow_guide_generator.png" width="120" alt="Workflow Guide Generator Logo">
+<img src="assets/workflow_guide_generator_logo.png" width="120" alt="Workflow Guide Generator Logo">
 
 # Workflow Guide Generator
 
-### Intelligent Workflow Documentation Platform for ComfyUI
+### Artist Workflow Documentation Platform for ComfyUI
 
-**Analyze • Understand • Explain • Document • Onboard • Discover • Visualize ComfyUI Workflows**
+**Analyze • Understand • Explain • Document • Discover • Onboard • Visualize ComfyUI Workflows**
 
-Workflow Purpose • Model Discovery • Workflow Flow • Node Explanations • Workflow Insights • Artist Documentation
+Workflow Purpose • Workflow Overview • Models Used • Main Settings • Workflow Flow • Performance Tips • Key Nodes Used
 
 <p align="center">
 
@@ -27,15 +27,17 @@ Workflow Purpose • Model Discovery • Workflow Flow • Node Explanations •
 <p align="center">
   <a href="#-installation">📥 Install</a>
   &nbsp;·&nbsp;
-  <a href="#-documentation-panel">📋 Documentation Panel</a>
+  <a href="#-artist-workflow-guide">📋 Workflow Guide</a>
   &nbsp;·&nbsp;
-  <a href="#-documentation-engines">🧠 Engines</a>
+  <a href="#-analysis-engines">🧠 Engines</a>
   &nbsp;·&nbsp;
   <a href="#-documentation">📖 Documentation</a>
   &nbsp;·&nbsp;
   <a href="#-project-structure">🏗 Architecture</a>
   &nbsp;·&nbsp;
   <a href="#-roadmap">🛠 Roadmap</a>
+  &nbsp;·&nbsp;
+  <a href="#-contributing">🤝 Contributing</a>
 </p>
 
 </div>
@@ -43,32 +45,34 @@ Workflow Purpose • Model Discovery • Workflow Flow • Node Explanations •
 ---
 
 <p align="center">
-  <img src="images/workflow-guide-preview.png" width="95%" alt="Workflow Guide Generator">
+  <img src="assets/workflow-guide-preview.png" width="95%" alt="Workflow Guide Generator">
 </p>
 
 ---
 
 # 🚀 What is Workflow Guide Generator?
 
-Workflow Guide Generator is a workflow intelligence and documentation platform built specifically for ComfyUI.
+Workflow Guide Generator is an artist-focused workflow documentation platform built specifically for ComfyUI.
 
 As workflows become larger and more complex, understanding what a workflow does becomes increasingly difficult.
 
 Many shared workflows contain:
 
 * Hundreds of nodes
-* Multiple models
+* Multiple AI models
 * Custom node packs
 * Complex routing
-* Limited documentation
+* Little or no documentation
 
-Workflow Guide Generator automatically analyzes workflows and generates artist-friendly documentation directly inside ComfyUI.
+Workflow Guide Generator automatically analyzes workflows and generates an Artist Workflow Guide directly inside ComfyUI.
+
+The generated guide helps artists understand workflows before modifying or executing them.
 
 ---
 
 # 🎯 Key Features
 
-### 🎯 Workflow Purpose Engine
+### 🎯 Workflow Purpose
 
 Automatically identifies workflow intent.
 
@@ -76,85 +80,37 @@ Provides:
 
 * Workflow Type
 * Workflow Purpose
-* Workflow Overview
-* Workflow Classification
+* Workflow Description
 
 ---
 
-### 📥 Model Discovery Engine
+### 📖 Workflow Overview
+
+Generates a high-level explanation of the workflow.
+
+Provides:
+
+* Workflow Summary
+* Workflow Context
+* Workflow Complexity Overview
+
+---
+
+### 📥 Models Used
 
 Automatically discovers workflow models.
 
 Provides:
 
-* Main Models
-* UNET Models
-* CLIP Models
-* Qwen Models
-* VAE Models
-* LoRAs
-* ControlNets
-* Upscalers
-
-![Model Discovery](assets/model-discovery-preview.png)
+* Main Model
+* Text Encoder
+* Image Decoder
 
 ---
 
-### 🧠 Model Explanation Engine
+### ⚙ Main Settings
 
-Explains model roles in artist-friendly language.
-
-Provides:
-
-* Model Purpose
-* Workflow Role
-* Artist Explanations
-
----
-
-### 🗺 Workflow Flow Engine
-
-Transforms technical workflows into understandable stages.
-
-Provides:
-
-* Workflow Flow
-* Processing Stages
-* Simplified Pipeline Overview
-
-Example:
-
-Load Models
-↓
-Process Prompt
-↓
-Generate Image
-↓
-Build Final Image
-↓
-Save Result
-
-![Workflow Flow](assets/workflow-flow-preview.png)
-
----
-
-### 📋 Node Purpose Engine
-
-Explains important workflow nodes.
-
-Provides:
-
-* Node Purpose
-* Artist Explanations
-* Workflow Context
-
-![Node Explanation](assets/node-explanation-preview.png)
-
----
-
-### ⚙ Workflow Insights Engine
-
-Extracts workflow configuration information.
+Extracts important workflow settings.
 
 Provides:
 
@@ -163,13 +119,37 @@ Provides:
 * Steps
 * CFG
 * Resolution
-* Output Type
+* Estimated VRAM
 
 ---
 
-### 🚀 Performance Recommendation Engine
+### 🗺 Workflow Flow
 
-Generates workflow-specific optimization advice.
+Converts technical workflows into understandable stages.
+
+Example:
+
+```text
+Load Models
+      ↓
+
+Process Prompt
+      ↓
+
+Generate Image
+      ↓
+
+Build Final Image
+      ↓
+
+Save Result
+```
+
+---
+
+### 🚀 Performance Tips
+
+Generates workflow-specific optimization recommendations.
 
 Provides:
 
@@ -179,14 +159,26 @@ Provides:
 
 ---
 
-# 📋 Documentation Panel
+### 📋 Key Nodes Used
+
+Explains important workflow nodes.
+
+Provides:
+
+* Node Purpose
+* Workflow Role
+* Artist-Friendly Explanations
+
+---
+
+# 📋 Artist Workflow Guide
 
 Generated documentation includes:
 
 ```text
 Workflow Purpose
 
-Workflow Overview
+Overview
 
 Models Used
 
@@ -194,16 +186,18 @@ Main Settings
 
 Workflow Flow
 
-Output Information
+Output
 
 Performance Tips
 
 Key Nodes Used
 ```
 
+The guide is generated automatically from workflow data and displayed directly inside ComfyUI.
+
 ---
 
-# 🧠 Documentation Engines
+# 🧠 Analysis Engines
 
 Current Analysis Engines:
 
@@ -238,45 +232,187 @@ Workflow
 Workflow Analysis
       ↓
 
+Workflow Type Detection
+      ↓
+
 Model Discovery
       ↓
 
-Node Analysis
-      ↓
-
-Workflow Classification
+Workflow Insights
       ↓
 
 Workflow Flow Generation
       ↓
 
+Node Purpose Analysis
+      ↓
+
 Documentation Generation
       ↓
 
-Documentation Panel
+Artist Workflow Guide
 ```
+
+---
+
+# 🎯 Supported Workflow Types
+
+### Flux Workflows
+
+* Flux Dev
+* Flux Schnell
+* Flux Variants
+
+---
+
+### Stable Diffusion Workflows
+
+* SDXL
+* SD 1.5
+* SDXL Turbo
+
+---
+
+### ControlNet Workflows
+
+* Pose
+* Depth
+* Canny
+* OpenPose
+
+---
+
+### Image Editing Workflows
+
+* Inpainting
+* Outpainting
+* Image Enhancement
+
+---
+
+### Upscaling Workflows
+
+* ESRGAN
+* AI Upscaling Pipelines
+
+---
+
+### Video Workflows
+
+* Video Processing
+* Frame Extraction
+* Video Enhancement
+
+---
+
+### VFX Pipelines
+
+* Video To EXR
+* Sequence Generation
+* Production Rendering
 
 ---
 
 # 📂 Project Structure
 
-(Use your actual repository structure here.)
+```text
+ComfyUI-Workflow-Guide-Generator/
+
+├── backend/
+│   ├── workflow_analyzer.py
+│   ├── workflow_purpose_engine.py
+│   ├── workflow_flow_engine.py
+│   ├── workflow_insights_engine.py
+│   ├── workflow_diagram_engine.py
+│   ├── model_discovery_engine.py
+│   ├── model_parameter_engine.py
+│   ├── model_explanation_engine.py
+│   └── node_purpose_engine.py
+│
+├── docs/
+│   ├── installation-guide.md
+│   ├── user-guide.md
+│   ├── architecture.md
+│   ├── node-explanations.md
+│   ├── workflow-analysis-engine.md
+│   ├── optimization-notes.md
+│   ├── recruiter-overview.md
+│   ├── business-value.md
+│   ├── project-highlights.md
+│   ├── technical-deep-dive.md
+│   ├── faq.md
+│   ├── changelog.md
+│   ├── contributing.md
+│   ├── portfolio-case-study.md
+│   └── roadmap.md
+│
+├── assets/
+├── backend/
+├── web/
+├── nodes/
+│
+├── LICENSE
+├── requirements.txt
+└── README.md
+```
 
 ---
 
 # 📖 Documentation
 
-Available Documentation:
+Detailed documentation is available in:
+
+```text
+docs/
+```
+
+Included Guides:
 
 * Installation Guide
 * User Guide
 * Architecture
 * Node Explanations
 * Workflow Analysis Engine
+* Technical Deep Dive
 * Optimization Notes
 * Recruiter Overview
-* Technical Deep Dive
+* Business Value
+* Project Highlights
+* FAQ
+* Changelog
 * Roadmap
+
+---
+
+# 📥 Installation
+
+Navigate to your ComfyUI custom nodes directory:
+
+```bash
+cd ComfyUI/custom_nodes
+```
+
+Clone the repository:
+
+```bash
+git clone https://github.com/GowthamGENAIVFX/ComfyUI-Workflow-Guide-Generator
+```
+
+Restart ComfyUI.
+
+Open ComfyUI and search for:
+
+```text
+Workflow Guide Generator
+```
+
+Press:
+
+```text
+Generate Artist Guide
+```
+
+The documentation panel will be generated automatically.
 
 ---
 
@@ -302,6 +438,10 @@ Improve maintainability of workflow assets.
 
 Teach workflow design to new users.
 
+### Workflow Auditing
+
+Review workflow functionality before modification.
+
 ---
 
 # 👥 Designed For
@@ -316,18 +456,20 @@ Teach workflow design to new users.
 
 ✅ VFX Professionals
 
+✅ Content Creators
+
 ✅ Production Teams
 
 ---
 
 # 🔒 Privacy
 
-Runs completely inside ComfyUI.
+Workflow Guide Generator runs entirely within your local ComfyUI environment.
 
 * No workflow uploads
 * No cloud processing
-* No external services
-* No workflow sharing
+* No external analysis services
+* No workflow data sharing
 
 All analysis remains local.
 
@@ -335,14 +477,15 @@ All analysis remains local.
 
 # 🛠 Roadmap
 
-Future Enhancements:
+Future planned enhancements:
 
-* Workflow Health Analysis
-* Dependency Mapping
-* Workflow Scoring
-* Workflow Comparison
+* Documentation Export
+* PDF Reports
+* Markdown Export
 * Interactive Documentation
-* Workflow Export System
+* Workflow Visualization
+* Workflow Comparison
+* Expanded Workflow Recognition
 
 ---
 
@@ -350,12 +493,14 @@ Future Enhancements:
 
 Contributions are welcome.
 
-Areas of interest:
+Areas for contribution:
 
-* New Workflow Engines
+* Workflow Analysis Improvements
+* New Workflow Types
+* Node Explanation Enhancements
 * Documentation Improvements
 * UI Enhancements
-* Workflow Intelligence Features
+* Performance Optimizations
 
 ---
 
@@ -363,7 +508,7 @@ Areas of interest:
 
 MIT License
 
-See LICENSE for details.
+See the LICENSE file for complete details.
 
 ---
 
@@ -371,4 +516,4 @@ See LICENSE for details.
 
 ### Making Every ComfyUI Workflow Understandable
 
-Workflow Documentation • Workflow Intelligence • Model Discovery • Artist Onboarding • Workflow Understanding
+Workflow Documentation • Workflow Understanding • Model Discovery • Artist Onboarding • Workflow Intelligence
