@@ -2,20 +2,23 @@
 
 ## Problem
 
-Large ComfyUI workflows are difficult to understand.
+Many ComfyUI workflows are shared without documentation.
 
-Teams frequently encounter:
+Artists often spend significant time trying to understand:
 
-* Poor documentation
-* Knowledge silos
-* Long onboarding times
-* Workflow maintenance difficulties
+* Workflow purpose
+* Models used
+* Important settings
+* Workflow flow
+* Output expectations
+
+This slows onboarding and collaboration.
 
 ---
 
 ## Solution
 
-Workflow Guide Generator automatically generates documentation from workflows.
+Workflow Guide Generator automatically creates workflow documentation directly from workflow data.
 
 No manual documentation is required.
 
@@ -23,37 +26,37 @@ No manual documentation is required.
 
 ## Benefits
 
-### Faster Onboarding
+### Faster Workflow Understanding
 
-New artists can understand workflows quickly.
+Artists can understand workflows immediately.
 
-### Reduced Technical Debt
+### Better Team Collaboration
 
-Workflows become self-documenting.
+Workflows become easier to share and maintain.
 
-### Better Collaboration
+### Reduced Onboarding Time
 
-Teams can share workflows with built-in explanations.
+New team members can quickly understand existing workflow libraries.
 
-### Improved Maintainability
+### Self-Documenting Pipelines
 
-Workflow purpose and structure remain understandable over time.
+Documentation is generated automatically from the workflow itself.
 
 ---
 
-## Production Environments
+## Production Usage
 
 Useful for:
 
 * AI Studios
-* VFX Teams
-* Content Creation Teams
-* Research Groups
-* Freelancers
 * Technical Artists
+* VFX Teams
+* Content Creators
+* Freelancers
+* Research Teams
 
 ---
 
-## Long-Term Value
+## Long-Term Impact
 
-Transforms workflow assets into documented production tools.
+Transforms undocumented workflows into understandable production assets.
