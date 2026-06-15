@@ -45,7 +45,7 @@ Workflow Purpose • Workflow Overview • Models Used • Main Settings • Wor
 ---
 
 <p align="center">
-  <img src="assets/workflow-guide-preview.png" width="95%" alt="Workflow Guide Generator">
+  <img src="images/workflow-guide-preview.png" width="95%" alt="Workflow Guide Generator">
 </p>
 
 ---
