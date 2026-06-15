@@ -2,61 +2,55 @@
 
 ## Overview
 
-Workflow Guide Generator automatically analyzes ComfyUI workflows and generates artist-friendly documentation.
+Workflow Guide Generator automatically analyzes ComfyUI workflows and creates an Artist Workflow Guide.
 
-The generated guide explains:
+The generated guide helps artists understand workflows before modifying or executing them.
 
-* What the workflow does
-* Which models are used
-* Important settings
-* Workflow processing stages
-* Output information
-* Performance recommendations
+---
 
 ## Using the Node
 
 Add:
 
-```text
 Workflow Guide Generator
-```
 
 to your workflow.
 
 Press:
 
-```text
 Generate Artist Guide
-```
 
-The extension will create a documentation panel.
+The documentation panel will be generated automatically.
 
-## Workflow Purpose
+---
 
-Explains the primary objective of the workflow.
+## Generated Sections
 
-Examples:
+### Workflow Purpose
 
-* Flux Image Generation
-* Video to EXR Conversion
-* Image Upscaling
-* Inpainting
+Explains what the workflow is designed to do.
 
-## Models Used
+---
+
+### Overview
+
+Provides a concise summary of workflow functionality.
+
+---
+
+### Models Used
 
 Displays:
 
-* Main Model
+* Main AI Model
 * Text Encoder
 * Image Decoder
-* LoRAs
-* ControlNets
 
-## Main Settings
+---
 
-Displays important generation parameters.
+### Main Settings
 
-Examples:
+Displays:
 
 * Sampler
 * Scheduler
@@ -64,9 +58,11 @@ Examples:
 * CFG
 * Resolution
 
-## Workflow Flow
+---
 
-Shows the workflow in simplified artist language.
+### Workflow Flow
+
+Shows simplified workflow stages.
 
 Example:
 
@@ -76,14 +72,42 @@ Process Prompt
 ↓
 Generate Image
 ↓
+Build Final Image
+↓
 Save Result
 
-## Performance Tips
+---
 
-Provides workflow-specific optimization recommendations.
+### Output
 
-## Key Nodes
+Displays the workflow output type.
 
-Explains major nodes used by the workflow.
+Examples:
 
-This section helps artists understand workflows without manually tracing node connections.
+* PNG Image
+* EXR Sequence
+* Video Output
+
+---
+
+### Performance Tips
+
+Provides optimization recommendations.
+
+---
+
+### Key Nodes Used
+
+Explains important workflow nodes in artist-friendly language.
+
+---
+
+## Supported Workflow Types
+
+* Flux
+* Stable Diffusion
+* ControlNet
+* Inpainting
+* Upscaling
+* Video Processing
+* Video to EXR
