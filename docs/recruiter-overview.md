@@ -2,60 +2,47 @@
 
 ## Project Summary
 
-Workflow Guide Generator is a ComfyUI extension that automatically analyzes workflows and generates artist-friendly documentation directly inside ComfyUI.
+Workflow Guide Generator is a ComfyUI extension that automatically analyzes workflows and generates artist-friendly documentation.
 
-The project was created to solve a common problem faced by artists and teams:
-
-Understanding complex workflows before modifying or executing them.
-
-Many production workflows contain dozens or hundreds of nodes. New users often spend significant time reverse-engineering workflow structure.
-
-Workflow Guide Generator transforms workflow JSON into understandable documentation.
+The project focuses on workflow understanding and onboarding.
 
 ---
 
-## Key Technical Areas
+## Problem Solved
 
-### Python Backend
+Many workflows contain:
 
-Responsible for:
+* Dozens of nodes
+* Multiple models
+* Custom node packs
+* Limited documentation
 
-* Workflow Analysis
-* Workflow Classification
-* Model Discovery
-* Dependency Analysis
-* Workflow Flow Generation
-* Documentation Generation
+Understanding these workflows can be difficult for artists and teams.
 
-### JavaScript Frontend
-
-Responsible for:
-
-* Documentation Panel Rendering
-* Dynamic UI Generation
-* Workflow Visualization
-* Artist Experience
+Workflow Guide Generator solves this by generating a structured workflow guide directly inside ComfyUI.
 
 ---
 
 ## Skills Demonstrated
 
-* Python Development
-* JavaScript Development
-* ComfyUI Extension Development
-* Workflow Analysis
-* Data Modeling
-* UI Design
-* Tool Development
-* Technical Documentation
+### Python
 
----
+* Workflow analysis
+* Data extraction
+* Rule-based classification
+* Documentation generation
 
-## Business Impact
+### JavaScript
 
-Reduces onboarding time for artists and technical teams by automatically documenting workflows.
+* Dynamic UI rendering
+* ComfyUI integration
+* LiteGraph customization
 
-Improves collaboration and workflow maintainability.
+### Product Design
+
+* Artist-focused UX
+* Documentation systems
+* Workflow onboarding tools
 
 ---
 
@@ -65,4 +52,9 @@ Improves collaboration and workflow maintainability.
 * JavaScript
 * ComfyUI
 * LiteGraph
-* Workflow Analysis Systems
+
+---
+
+## Business Impact
+
+Reduces workflow onboarding time and improves workflow maintainability.
