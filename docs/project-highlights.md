@@ -1,38 +1,61 @@
 # Project Highlights
 
-## Core Features
+## Workflow Purpose Detection
 
-### Workflow Type Detection
+Automatically determines what a workflow is designed to accomplish.
 
-Automatically identifies:
+Examples:
 
-* Flux
-* SDXL
-* ControlNet
+* Flux Image Generation
+* Video to EXR Conversion
+* Image Upscaling
 * Inpainting
-* Upscaling
-* Video Processing
-* Video to EXR
+* ControlNet Generation
 
 ---
 
-### Model Discovery
+## Workflow Overview Generation
 
-Automatically discovers:
+Creates a concise explanation of the workflow.
 
-* Main Models
-* CLIP Models
-* Qwen Models
-* VAEs
-* LoRAs
-* ControlNets
-* Upscalers
+Artists can immediately understand:
+
+* What the workflow does
+* What it produces
+* How complex it is
 
 ---
 
-### Workflow Flow Generation
+## Models Used
 
-Converts complex workflows into simple artist-friendly stages.
+Automatically identifies important workflow models.
+
+Includes:
+
+* Main AI Model
+* Text Encoder
+* Image Decoder
+
+---
+
+## Main Settings
+
+Extracts key workflow configuration values.
+
+Includes:
+
+* Sampler
+* Scheduler
+* Steps
+* CFG
+* Resolution
+* VRAM Recommendation
+
+---
+
+## Workflow Flow
+
+Converts technical node graphs into simple workflow stages.
 
 Example:
 
@@ -42,27 +65,40 @@ Process Prompt
 ↓
 Generate Image
 ↓
+Build Final Image
+↓
 Save Result
 
 ---
 
-### Dynamic Documentation Panel
+## Performance Tips
 
-Generates:
+Generates recommendations to improve workflow performance.
 
-* Workflow Purpose
-* Workflow Overview
-* Models Used
-* Main Settings
-* Workflow Flow
-* Output Information
-* Performance Recommendations
-* Key Node Explanations
+Examples:
+
+* Reduce resolution for faster previews
+* Lower CFG for natural results
+* Test with fewer sampling steps
 
 ---
 
-### Artist-Friendly Design
+## Key Nodes Used
 
-The project prioritizes workflow understanding over technical complexity.
+Explains important workflow nodes using artist-friendly language.
 
-Documentation is written for artists rather than developers.
+Examples:
+
+* KSampler
+* UNETLoader
+* CLIPLoader
+* VAELoader
+* SaveImage
+
+---
+
+## Artist Workflow Guide
+
+All analysis is combined into a single documentation panel directly inside ComfyUI.
+
+The goal is to help artists understand workflows in seconds.
