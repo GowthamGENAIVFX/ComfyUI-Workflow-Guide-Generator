@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/workflow_guide_generator_logo.png" width="120" alt="Workflow Guide Generator Logo">
+<img src="assets/Comfyui-Workflow_guide_generator.png" width="120" alt="Workflow Guide Generator Logo">
 
 # Workflow Guide Generator
 
