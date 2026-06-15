@@ -2,72 +2,57 @@
 
 ## Version 1.0
 
-### Completed
+Completed Features
 
 * Workflow Analysis
 * Workflow Classification
-* Purpose Detection
+* Workflow Purpose Generation
 * Model Discovery
-* Model Explanation
 * Workflow Flow Generation
-* Performance Tips
+* Workflow Insights
+* Node Purpose Analysis
+* Artist Workflow Guide
 * Dynamic Documentation Panel
-* Artist-Friendly Documentation
 
 ---
 
-# Version 1.1
+## Version 1.1
 
-Planned:
+Planned
 
-* Workflow Statistics
-* Workflow Health Checks
-* Better Node Categorization
-* Workflow Quality Score
-
----
-
-# Version 1.2
-
-Planned:
-
-* Workflow Search
-* Workflow Tags
-* Workflow Templates
-* Recommended Improvements
+* Better Model Recognition
+* More Workflow Types
+* Improved Node Explanations
+* Enhanced Performance Tips
 
 ---
 
-# Version 2.0
+## Version 1.2
 
-Major Features:
+Planned
+
+* Workflow Documentation Export
+* PDF Documentation
+* Markdown Export
+* Workflow Summary Reports
+
+---
+
+## Version 2.0
+
+Major Features
 
 * Interactive Workflow Documentation
-* Node Relationship Mapping
-* Visual Workflow Diagrams
-* Dependency Visualization
-* Workflow Comparison
+* Workflow Relationship Mapping
+* Workflow Visualization
+* Expanded Analysis Engines
 
 ---
 
-# Version 3.0
+## Long-Term Vision
 
-Long-Term Vision:
+Create a complete workflow documentation ecosystem for ComfyUI.
 
-Workflow Guide Generator becomes a complete workflow intelligence platform for ComfyUI.
+The goal is to make every workflow understandable regardless of complexity.
 
-Potential capabilities:
-
-* AI-generated workflow explanations
-* Workflow optimization suggestions
-* Automatic workflow documentation export
-* Team collaboration tools
-* Workflow knowledge base generation
-
----
-
-# Project Vision
-
-Make every ComfyUI workflow understandable within minutes regardless of its complexity.
-
-Artists should spend time creating, not reverse-engineering workflows.
+Artists should spend more time creating and less time reverse-engineering workflows.
