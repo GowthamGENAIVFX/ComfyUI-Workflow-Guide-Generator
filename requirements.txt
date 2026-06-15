@@ -1,0 +1,11 @@
+# No external dependencies required.
+
+# Uses standard ComfyUI runtime.
+
+# Future optional dependencies:
+
+# networkx
+
+# graphviz
+
+# pydantic

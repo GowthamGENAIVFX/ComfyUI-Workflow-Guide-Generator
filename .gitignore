@@ -1,0 +1,59 @@
+# Python
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+
+venv/
+.env/
+.venv/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
+
+# Build
+
+dist/
+build/
+*.egg-info/
+
+# ComfyUI
+
+output/
+input/
+temp/
+
+# Testing
+
+coverage/
+.pytest_cache/
+
+# Node
+
+node_modules/
+
+# Workflow Cache
+
+cache/
+
+# Generated Documentation
+
+generated_docs/
+
+# Local Settings
+
+settings.json
