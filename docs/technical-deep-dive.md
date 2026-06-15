@@ -1,12 +1,29 @@
 # Technical Deep Dive
 
-## Architecture
+## Overview
 
-Workflow Guide Generator consists of:
+Workflow Guide Generator is a ComfyUI extension that analyzes workflow JSON and converts technical workflow structures into artist-friendly documentation.
 
-### Backend Analysis Layer
+The extension operates entirely locally within ComfyUI and does not execute workflow nodes during analysis.
 
-Components:
+---
+
+# System Architecture
+
+The project consists of two layers:
+
+## Backend Analysis Layer
+
+Responsible for:
+
+* Workflow Analysis
+* Workflow Classification
+* Model Discovery
+* Workflow Flow Generation
+* Node Purpose Analysis
+* Documentation Generation
+
+Core Components:
 
 * WorkflowAnalyzer
 * WorkflowPurposeEngine
@@ -20,27 +37,47 @@ Components:
 
 ---
 
-## Analysis Pipeline
+## Frontend Presentation Layer
 
-Workflow JSON
-↓
-Workflow Classification
-↓
-Model Discovery
-↓
-Node Analysis
-↓
-Flow Generation
-↓
-Documentation Generation
-↓
-Frontend Rendering
+Responsible for:
+
+* Workflow Guide Generation
+* Documentation Rendering
+* Dynamic Layout
+* Artist Workflow Guide UI
+
+Core Components:
+
+* workflow_guide_node.js
+* workflow_documentation_panel.js
 
 ---
 
-## Workflow Classification Logic
+# Analysis Pipeline
 
-The system detects workflows using node pattern recognition.
+Workflow JSON
+↓
+Workflow Analyzer
+↓
+Workflow Type Detection
+↓
+Model Discovery
+↓
+Workflow Insights
+↓
+Workflow Flow Generation
+↓
+Node Purpose Analysis
+↓
+Documentation Assembly
+↓
+Artist Workflow Guide
+
+---
+
+# Workflow Classification
+
+The analyzer uses node pattern detection.
 
 Examples:
 
@@ -48,46 +85,65 @@ Examples:
 
 Detected by:
 
-* Flux Nodes
-* UNET Loader
-* KSampler
+* UNETLoader
+* Flux-specific nodes
+
+---
 
 ### ControlNet Workflow
 
 Detected by:
 
-* ControlNet Loader
-* Apply ControlNet
+* ControlNetLoader
+* ApplyControlNet
+
+---
+
+### Inpainting Workflow
+
+Detected by:
+
+* Mask nodes
+* Inpainting nodes
+
+---
 
 ### Video Workflow
 
 Detected by:
 
-* VHS Nodes
-* Video Processing Nodes
+* VHS_LoadVideo
+* Video processing nodes
 
 ---
 
-## Frontend Architecture
+### Video To EXR Workflow
 
-### Workflow Guide Node
+Detected by:
 
-User interaction layer.
-
-### Documentation Panel
-
-Visualization layer.
-
-### Dynamic Layout System
-
-Automatically sizes documentation panels based on content length.
+* VHS_LoadVideo
+* SaveEXRFrames
 
 ---
 
-## Design Goals
+# Dynamic Documentation Panel
 
+The panel automatically:
+
+* Wraps text
+* Calculates content height
+* Resizes sections
+* Adjusts overall node height
+
+This ensures all generated content remains visible regardless of workflow size.
+
+---
+
+# Design Goals
+
+* Artist Friendly
 * Fast Analysis
-* Low Memory Usage
-* Artist-Friendly Output
-* Workflow Agnostic Architecture
-* Extensible Engine Design
+* Minimal Configuration
+* Workflow Agnostic
+* Local Execution
+* Easy Maintenance
