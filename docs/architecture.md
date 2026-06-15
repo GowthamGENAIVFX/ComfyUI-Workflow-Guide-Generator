@@ -1,111 +1,122 @@
 # Architecture
 
-## System Overview
+## High-Level Architecture
 
-Workflow Guide Generator consists of two major components.
-
-### Backend Analysis Layer
-
-Responsible for workflow inspection.
-
-Components:
-
-* WorkflowAnalyzer
-* WorkflowPurposeEngine
-* WorkflowDiagramEngine
-* WorkflowInsightsEngine
-* WorkflowFlowEngine
-* ModelDiscoveryEngine
-* ModelParameterEngine
-* ModelExplanationEngine
-* NodePurposeEngine
-
-### Frontend Visualization Layer
-
-Responsible for guide rendering.
-
-Components:
-
-* workflow_guide_node.js
-* workflow_documentation_panel.js
-
-## Workflow
+Workflow Guide Generator converts workflow JSON into artist-friendly documentation.
 
 Workflow JSON
 ↓
-Workflow Analyzer
+Workflow Analysis
 ↓
 Model Discovery
 ↓
-Node Analysis
+Workflow Classification
 ↓
-Purpose Detection
+Workflow Insights
 ↓
-Flow Detection
+Workflow Flow Generation
+↓
+Node Purpose Analysis
 ↓
 Documentation Generation
 ↓
-Artist Guide Panel
+Artist Workflow Guide
 
-## Backend Responsibilities
+---
 
-### WorkflowAnalyzer
+# Backend Components
 
-Detects:
+## WorkflowAnalyzer
 
-* Workflow type
-* Complexity
-* Input nodes
-* Output nodes
-* Dependencies
+Responsible for:
 
-### WorkflowPurposeEngine
+* Workflow Type Detection
+* Complexity Analysis
+* Input Detection
+* Output Detection
+* Workflow Stage Discovery
 
-Generates workflow descriptions.
+---
 
-### WorkflowFlowEngine
+## WorkflowPurposeEngine
 
-Creates simplified workflow flow representations.
+Responsible for:
 
-### ModelDiscoveryEngine
+* Workflow Purpose Generation
+* Workflow Overview Generation
 
-Detects:
+---
 
-* Models
-* Encoders
-* VAEs
-* LoRAs
-* ControlNets
+## WorkflowFlowEngine
 
-### NodePurposeEngine
+Responsible for:
 
-Provides artist-friendly node explanations.
+* Workflow Stage Generation
+* Artist-Friendly Workflow Flow
 
-## Frontend Responsibilities
+---
 
-### Workflow Guide Generator
+## WorkflowInsightsEngine
 
-User interaction entry point.
+Responsible for:
 
-### Documentation Panel
+* Settings Extraction
+* Resolution Detection
+* Sampler Detection
+* Scheduler Detection
 
-Visual presentation layer.
+---
+
+## ModelDiscoveryEngine
+
+Responsible for:
+
+* Main Model Detection
+* Text Encoder Detection
+* Image Decoder Detection
+
+---
+
+## NodePurposeEngine
+
+Responsible for:
+
+* Node Explanation Generation
+* Artist-Friendly Descriptions
+
+---
+
+# Frontend Components
+
+## Workflow Guide Generator Node
+
+Entry point for documentation generation.
+
+Provides:
+
+* Generate Artist Guide button
+
+---
+
+## Documentation Panel
 
 Displays:
 
-* Purpose
-* Models
-* Settings
+* Workflow Purpose
+* Overview
+* Models Used
+* Main Settings
 * Workflow Flow
 * Output
 * Performance Tips
-* Key Nodes
+* Key Nodes Used
 
-## Design Goals
+---
 
-* Artist Friendly
-* Beginner Friendly
-* Workflow Agnostic
-* Fast Analysis
-* Dynamic UI
-* Minimal User Interaction
+# Design Principles
+
+* Simplicity
+* Clarity
+* Artist Focus
+* Fast Rendering
+* Local Execution
